@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Registro</title>
+    <link rel="stylesheet" href="./estilos/body.css">
+    <link rel="stylesheet" href="./estilos/menu.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/scroll.css">
+    <link href="./estilos/login.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <!--header-->
+    <header class="iconbitart">
+        <img class="img_logo" src="./icones/flat,550x550,075,f.u2.jpg" alt="icono bit_art">
+    </header>
+
+    <header class="main_header">
+        <input type="checkbox" id="boton_menu">
+        <label class="icono_menu" for="boton_menu">
+            <img src="./icones/iconomenu.png" alt="icono_menu" width="35px" height="35px">
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="../deportiva.html">Ropa deportiva</a> </li>
+                <li> <a href="../registro.html">Registrate</a> </li>
+                <li><a href="#piepagina">Información</a> </li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="dropbtn">More options</button>
+                <div class="dropdown_content">
+                    <a href="#section1">Ropa deportiva</a>
+                    <a href="#section2">Zapatos </a>
+                    <a href="#section3">Accesorios </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- registro -->
+    <center>
+        <h2 class="log">LOGIN VALIDATION</h2>
+    </center>
+
+    <div class="formulario">
+
+        <div class="usuario">
+            USUARIO: <br>
+            <input type="text" id="user" value="">
+        </div>
+
+        <div class="contraseña">
+            CONTRASEÑA: <br>
+            <input type="text" id="pass" value="">
+        </div>
+
+
+        <div class="botones">
+            <button id="calc" type="button" onclick="login()"> LOGIN </button>
+        </div>
+        <div id="main">
+            <h1 id="title"></h1>
+            <ol type="I" id="myList">
+
+            </ol>
+        </div>
+    </div>
+
+
+
+    <!-- pie de pagina -->
+    <footer id="piepagina">
+        <div class="map col">
+            <div class="mapa">
+                <h3>Ubicanos en</h3>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.401065840764!2d-74.0636679!3d4.6207894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a37c6adedc1d243!2sBICTIA!5e0!3m2!1ses-419!2sco!4v1584491935230!5m2!1ses-419!2sco"
+                    width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                <h4>Bogotá- Colombia</h4>
+                <h4><img src="./icones/whatsapp.png" alt="">+57 3045538120</h4>
+            </div>
+        </div>
+
+        <div class="info col">
+            <h3>-About-</h3>
+            <br>
+            <p>
+                ENCUENTRA TODO LO QUIERES DE MODA CON NOSOTROS, ¡TE ESPERAMOS!
+            </p>
+        </div>
+        <div class="social col">
+            <h3>-Redes-</h3>
+            <br>
+            <div class="redes">
+                <img src="./icones/instagram.png" alt="">
+                <img src="./icones/twitter.png" alt="">
+                <img src="./icones/facebook.png" alt="">
+            </div>
+            <div class="logokirari">
+                <img src="./icones/flat,550x550,075,f.u2.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="textofooter">
+        <p>
+            © COPYRIGHT 2020 Juan David Mahecha Cruz
+            <br>
+            Todos los derechos reservados Bogotá - Colombia
+        </p>
+    </div>
+    <!-- scripts -->
+    <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>

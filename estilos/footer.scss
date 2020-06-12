@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Paprika&display=swap');
+$footer: 'Paprika',
+cursive;
+
+#piepagina {
+    width: 100%;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    background-color: black;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+
+
+    >div {
+        width: 33%;
+        padding: 10px;
+        &:first-child { margin-left: 0; }
+        &:last-child { margin-right: 0; }
+        flex: 1;
+        text-align: center;
+    }
+
+    >div:first-child {
+        margin-right: 30px;
+    }
+
+    .map {
+        border: cornsilk 1px hidden;
+        text-align: center;
+
+        .mapa {
+            margin: auto;
+
+            h3 {
+                color: cornsilk;
+                font-family: $footer;
+            }
+
+            h4 {
+                color: cornsilk;
+                font-family: $footer;
+
+                img {
+                    width: 5%;
+                }
+            }
+        }
+    }
+
+    .info {
+        padding: 15px;
+        border: cornsilk 1px hidden;
+
+        h3,
+        p {
+            color: blanchedalmond;
+            font-family: $footer;
+        }
+    }
+
+    .social {
+        border: cornsilk 1px hidden;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h3 {
+            color: blanchedalmond;
+            font-family: $footer;
+            text-align: center;
+        }
+
+        .redes {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 7%;
+                margin-right: 15px;
+            }
+
+            img:hover {
+                transform: rotate(45deg);
+            }
+        }
+
+        .logokirari {
+            width: 100%;
+            margin-top: 20px;
+
+            img {
+                width: 35%;
+            }
+        }
+    }
+}
+
+.textofooter{
+    background-color: black;
+    filter: opacity(50%);
+    color: blanchedalmond;
+    font-family: $footer;
+    text-align: center;
+}
+
+@media  (max-width: 980px) {
+    #piepagina {
+
+    .col {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+          &:nth-last-child(2) {
+              margin-right: 0;
+          }
+          &:last-child {
+              flex-basis: 100%;
+              margin: 0;
+          }
+      }
+  }
+}
+  
+  @media  (max-width: 680px) {
+    #piepagina {.col {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
+}

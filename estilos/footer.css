@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Paprika&display=swap");
+#piepagina {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  background-color: black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0;
+}
+
+#piepagina > div {
+  width: 33%;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+#piepagina > div:first-child {
+  margin-left: 0;
+}
+
+#piepagina > div:last-child {
+  margin-right: 0;
+}
+
+#piepagina > div:first-child {
+  margin-right: 30px;
+}
+
+#piepagina .map {
+  border: cornsilk 1px hidden;
+  text-align: center;
+}
+
+#piepagina .map .mapa {
+  margin: auto;
+}
+
+#piepagina .map .mapa h3 {
+  color: cornsilk;
+  font-family: "Paprika", cursive;
+}
+
+#piepagina .map .mapa h4 {
+  color: cornsilk;
+  font-family: "Paprika", cursive;
+}
+
+#piepagina .map .mapa h4 img {
+  width: 5%;
+}
+
+#piepagina .info {
+  padding: 15px;
+  border: cornsilk 1px hidden;
+}
+
+#piepagina .info h3,
+#piepagina .info p {
+  color: blanchedalmond;
+  font-family: "Paprika", cursive;
+}
+
+#piepagina .social {
+  border: cornsilk 1px hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#piepagina .social h3 {
+  color: blanchedalmond;
+  font-family: "Paprika", cursive;
+  text-align: center;
+}
+
+#piepagina .social .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#piepagina .social .redes img {
+  width: 7%;
+  margin-right: 15px;
+}
+
+#piepagina .social .redes img:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#piepagina .social .logokirari {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#piepagina .social .logokirari img {
+  width: 35%;
+}
+
+.textofooter {
+  background-color: black;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  color: blanchedalmond;
+  font-family: "Paprika", cursive;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  #piepagina .col {
+    margin-bottom: 5px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  #piepagina .col:nth-last-child(2) {
+    margin-right: 0;
+  }
+  #piepagina .col:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  #piepagina .col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

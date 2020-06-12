@@ -1,0 +1,91 @@
+#division {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  width: 100%;
+  height: 50%;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  background-color: black;
+}
+
+#division > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#division > div:first-child {
+  margin-left: 0;
+}
+
+#division > div:last-child {
+  margin-right: 0;
+}
+
+#division article {
+  width: 33%;
+  height: auto;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#division article .imagen {
+  width: 100%;
+  padding: 10px;
+}
+
+#division article .imagen img {
+  width: 100%;
+  height: 550px;
+}
+
+#division article .parrafoi {
+  color: whitesmoke;
+}
+
+#division article .parrafoi p {
+  padding: 13px;
+  font-weight: 600;
+}
+
+#division article:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 2px 2px black;
+          box-shadow: 0 2px 2px black;
+}
+
+@media (max-width: 980px) {
+  #division article {
+    margin-bottom: 5px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  #division article:nth-last-child(2) {
+    margin-right: 0;
+  }
+  #division article:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  #division article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+/*# sourceMappingURL=deportiva.css.map */

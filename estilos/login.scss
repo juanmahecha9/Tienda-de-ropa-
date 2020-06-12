@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+.log{
+  color: whitesmoke;
+  font-style: italic;
+  font-family: 'Caveat', cursive;
+}
+
+.formulario{
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: green;
+  width: 400px;
+  padding: 70px;
+  box-shadow: 15px 15px 25px black;
+  .usuario{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  font-style: italic;
+  font-family: 'Caveat', cursive;
+font-size: 40px;
+  }
+  .contraseña{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  font-style: italic;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  }
+  input{
+    height: 30px;;
+  }
+  #calc{
+    background-color: black;
+    color: blanchedalmond;
+    font-style: italic;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    width: 200px;
+    height: 50px;
+  }
+
+}
+
+@media(max-width:700px){
+  .formulario{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: green;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    box-shadow: 15px 15px 25px black;
+    .usuario{
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: whitesmoke;
+    font-style: italic;
+    font-family: 'Caveat', cursive;
+  font-size: 20px;
+    }
+    .contraseña{
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: whitesmoke;
+    font-style: italic;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    }
+    input{
+      height: 30px;;
+    }
+    #calc{
+      
+      font-size: 20px;
+      width: 100px;
+      height: 25px;
+    }
+  
+  }
+}
